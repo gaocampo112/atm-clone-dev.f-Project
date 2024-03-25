@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero Automatico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <script defer src="./dataBase.js"></script>
+    <script defer src="./app.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav id="navBar">
+            <div id="logo">
+                <h1 id="tituloPrincipal">ATM
+                    Express </h1>
+            </div>
+
+            <div id="dineroTotalCajero">
+                <p id="totalDienro"></p>
+            </div>
+
+            <div>
+                <button class="boton">USUARIOS</button>
+            </div>
+        </nav>
+
+        <div id="inicioSesion">
+            <form id="loginForm" action="">
+                <div class="errorUsuario">
+                    <p>Ingrese un usuario y/o contraseña valida</p>
+                </div>
+                <div class="inputForm">
+                    <label for="userName">Usuario</label>
+                    <input type="text" id="userName">
+                </div>
+                <div class="inputForm">
+                    <label for="userPass">Contraseña</label>
+                    <input type="password" id="userPass">
+                </div>
+                <div class="inputForm">
+                    <button class="boton" type="submit">Ingresar</button>
+                </div>
+            </form>
+            <div id="userContainer">
+                <h2 id="showName"></h2>
+                <h3 id="showSaldo"></h3>
+                <div id="dinero">
+                    <button id="deposito">Depositar</button>
+                    <button id="retiro">Retirar</button>
+                </div>
+                <button class="boton" id="salir">Salir</button>
+            </div>
+
+
+            <div>
+                <form action="" class="retiroDeposito">
+                    <div class="errorUsuarioDeposito">
+                        <p>Ingrese una cantidad</p>
+                    </div>
+                    <div class="inputForm">
+                        <label for="cantidadDinero">Cantidad</label>
+                        <input type="number" id="cantidadDinero" >
+                    </div>
+                    <div>
+                        <button type="submit" class="boton">Depositar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="mensajeConfirmacion">
+                <p>¡Se completo el deposito con exito!</p>
+                <p class="nuevoSaldo"></p>
+                <button class="boton continuar">Continuar</button>
+            </div>
+
+            
+            <div>
+                <form action="" class="retiroRetiro">
+                    <div class="errorUsuarioRetiro">
+                        <p>Ingrese una cantidad</p>
+                    </div>
+                    <div class="inputForm">
+                        <label for="cantidadDineroRetiro">Cantidad</label>
+                        <input type="number" id="cantidadDineroRetiro">
+                    </div>
+                    <div>
+                        <button type="submit" class="boton">Retirar</button>
+                    </div>
+                </form>
+            </div>
+            <div id="mensajeSinFondosCajero">
+                <p>El cajero no tiene fondos</p>
+                <p>suficientes para completar el retiro</p>
+                <p>¡vuelva pronto!</p>
+                <button class="boton continuar">Continuar</button>
+            </div>
+            <div id="mensajeSinFondosCuneta">
+                <p>Usted no tiene fondos</p>
+                <p>suficientes para completar el retiro</p>
+                <p>¡vuelva pronto!</p>
+                <button class="boton continuar">Continuar</button>
+            </div>
+
+
+
+
+
+
+        </div>
+    </main>
+
+</body>
+
+</html>
