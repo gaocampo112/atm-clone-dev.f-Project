@@ -184,7 +184,20 @@ html{
 
 
 
-.mensajeConfirmacion{
+.mensajeConfirmacion {
+    display: none;
+    color: #ffffff;
+    flex-direction: column;
+    width: 400px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(53, 53, 53, 0.842);
+    border-radius: 10px;
+    border: 2.5px solid black;
+}
+
+.mensajeConfirmacionRetiro{
     display: none;
     color: #ffffff;
     flex-direction: column;

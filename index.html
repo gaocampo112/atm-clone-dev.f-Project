@@ -46,8 +46,8 @@
                 </div>
             </form>
             <div id="userContainer">
-                <h2 id="showName"></h2>
-                <h3 id="showSaldo"></h3>
+                <h2 class="showName"></h2>
+                <h3 class="showSaldo"></h3>
                 <div id="dinero">
                     <button id="deposito">Depositar</button>
                     <button id="retiro">Retirar</button>
@@ -75,7 +75,6 @@
                 <p class="nuevoSaldo"></p>
                 <button class="boton continuar">Continuar</button>
             </div>
-
             
             <div>
                 <form action="" class="retiroRetiro">
@@ -95,13 +94,18 @@
                 <p>El cajero no tiene fondos</p>
                 <p>suficientes para completar el retiro</p>
                 <p>¡vuelva pronto!</p>
-                <button class="boton continuar">Continuar</button>
+                <button class="boton continuarSinFondosAtm">Continuar</button>
             </div>
             <div id="mensajeSinFondosCuneta">
                 <p>Usted no tiene fondos</p>
                 <p>suficientes para completar el retiro</p>
                 <p>¡vuelva pronto!</p>
-                <button class="boton continuar">Continuar</button>
+                <button class="boton continuarSinFondosCuenta">Continuar</button>
+            </div>
+            <div class="mensajeConfirmacionRetiro">
+                <p>¡Se completo el retiro con exito!</p>
+                <p class="nuevoSaldo"></p>
+                <button class="boton continuarRetiroExito">Continuar</button>
             </div>
 
 
