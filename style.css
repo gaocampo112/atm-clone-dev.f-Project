@@ -32,6 +32,21 @@ html{
     letter-spacing: 1.1px;
 }
 
+.listaUsuarios{
+    white-space: pre-line;
+    display: none;
+    background-color: #ffffffd2;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 550px;
+    line-height: 25px;
+    position: absolute;
+    right: 28px;
+    top: 70px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
 
 #inicioSesion{
     display: flex;
@@ -226,7 +241,7 @@ html{
     border: 2.5px solid black;
 }
 
-#mensajeSinFondosCajero, #mensajeSinFondosCuneta{
+#mensajeSinFondosCajero, #mensajeSinFondosCuneta, .mensajeConfirmacionRetiro{
     display: none;
     color: #ffffff;
     flex-direction: column;

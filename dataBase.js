@@ -39,6 +39,8 @@ const continuarSinFondosAtm = document.querySelector('.continuarSinFondosAtm')
 const continuarSinFondosCuenta = document.querySelector('.continuarSinFondosCuenta')
 const mensajeConfirmacionRetiro = document.querySelector('.mensajeConfirmacionRetiro')
 const continuarRetiroExito = document.querySelector('.continuarRetiroExito')
+const usuariosInfo = document.querySelector('#usuariosInfo')
+const listaUsuarios = document.querySelector('.listaUsuarios')
 
 continuarRetiroExito
 

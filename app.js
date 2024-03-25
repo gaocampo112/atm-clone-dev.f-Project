@@ -13,6 +13,22 @@ document.addEventListener("DOMContentLoaded", function(event){
 
 
 
+//funcion mostrar lista usuarios
+
+function mostrarListaUsuarios(){
+    if(listaUsuarios.style.display == "flex"){
+        listaUsuarios.style.display = "none"
+    }
+    else{
+        listaUsuarios.style.display = "flex"
+    }
+    
+    
+}
+
+usuariosInfo.addEventListener('click', mostrarListaUsuarios)
+
+
 // Validacion de usuario y contrasena para ingresar
 function ingresar(e){
     e.preventDefault()
@@ -88,6 +104,7 @@ retiroDeposito.addEventListener('submit', confirmarDeposito)
 
 
 //funcion para entrar al menu de retiro
+
 function quitarDinero()
 {
     userContainer.style.display = "none"
